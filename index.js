@@ -15,33 +15,10 @@ client.on ("ready", () => {
 const prefix = "!jp2 ";
 client.on ("message", async message => { 
 
-  if (!message.guild) return;
-if (message.content === 'Dość') {
-if (message.member.voice.channel) {
-const connection = await message.member.voice.channel.join();
-const dispatcher = connection.play('D:\JP2BOT\mp3\Dość.mp3');
-dispatcher.pause();
-dispatcher.resume();
-
-dispatcher.setVolume(0.5); 
-
-dispatcher.on('finish', () => {
-  console.log('Finished playing!');
-});
-
 dispatcher.destroy(); 
 } else {
   message.reply('XYZ');
 }}
-         if (message.content === 'xo') {
-        if (message.member.voice.channel) {
-          const connection = await message.member.voice.channel.join();
-          connection.play(ytdl('https://www.youtube.com/watch?v=QZXc39hT8t4&list=PLkHfHt307_sUbPcah40NtzDmId5wZDMa2&index=15&t=0s', { filter: 'audioonly' }));
-        } else {
-          message.reply('You need to join a voice channel first!');
-        }
-      }
-
     if (message.content.startsWith ("Witaj Karolu")) {
         message.reply ('Cześć');
     }
