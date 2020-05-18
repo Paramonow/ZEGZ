@@ -227,4 +227,4 @@ if (!message.guild) return;
      });
 }},
 )
-client.login(token);
+client.login(process.env.BOT_TOKEN);
