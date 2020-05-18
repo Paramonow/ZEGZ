@@ -1,1 +1,1 @@
-worker: node index.js ZEGZ
+worker: node index.js 
