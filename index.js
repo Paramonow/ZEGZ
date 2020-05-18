@@ -2,7 +2,7 @@ const discord = require ("discord.js");
 const client = new discord.Client(); 
 const ytdl = require('ytdl-core');
 
-const token = "Njg4MzkzMTA2NzAxMjg3NDM1.XsItpA.Dz1WlD48D4HptLrXhTMpQFT2TYY";
+const token = "Njg4MzkzMTA2NzAxMjg3NDM1.XsIucg.4BKyMf3vY6bB0b-cnbgQN3TRWCk";
 client.on ("ready", () => {
     console.log ("Gotowy");
     console.log (`${client.user.tag} wbija na discord`) 
