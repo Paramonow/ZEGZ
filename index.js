@@ -2,7 +2,8 @@
 const client = new discord.Client(); 
 const ytdl = require('ytdl-core');
 
-const token = "Njg4MzkzMTA2NzAxMjg3NDM1.XsIxgw.1JDY5W-PXNQmFpvyUGam5-hhzrg";
+const config = require('./config.json');
+
 client.on ("ready", () => {
     console.log ("Gotowy");
     console.log (`${client.user.tag} wbija na discord`) 
@@ -250,4 +251,4 @@ if (!message.guild) return;
      });
 }},
 )
-client.login (process.env.BOT_TOKEN);
+client.login(config.token)
